@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    border: 1px solid black;
+    
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 70vh;
+}
+.container div:nth-child(1){
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+
+    justify-self: end;
+}
+.container div:nth-child(2){
+    width: 100px;
+    height:100px;
+    background-color: black;
+}
+.container div:nth-child(3){
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.container div:nth-child(4){
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}

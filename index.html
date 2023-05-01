@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/challenge/css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-flex">
+        <div class="container">
+            <div class="container-logo">                      
+               <img src="imagens/Alura.png" alt="Vector-Alura">
+            </div>
+
+            <section class="input">
+                <textarea name="" id="" class="texto" cols="30" rows="10"  placeholder="Digite seu texto"></textarea>
+                <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> 
+                    Apenas letras minúsculas e sem acento.
+                </p>
+                <div>
+                    <input type="button" value="Criptografar" class="criptografar">
+                    <input type="button" value="Descriptografar" class="descriptografar">
+                </div>
+            </section>
+        </div>
+
+        <div class="output">
+            <img src="imagens/High quality products 1 1.svg" alt="High quality products">
+            <div>
+                <h1>Nenhuma mensagem encontrada</h1>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+        </div>
+        <div class="result hide">
+            <p class="result-p">Nenhuma mensagem encontrada</p>
+            <input type="button" value="copiar" class="result-btn">
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/5d4092aedc.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
