@@ -13,7 +13,7 @@ document.body.addEventListener("click", (e)=>{
     if(target === "criptografar" || target === "descriptografar" || target === "result-btn"){
         let palavra = texto.value;
 
-        output.setAttribute("class", "output hide");
+        output.setAttribute("class", "hide");
         result.parentElement.classList.remove("hide")
         
         if(palavra === ""){
