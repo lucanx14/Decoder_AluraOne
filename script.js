@@ -12,6 +12,7 @@ document.body.addEventListener("click", (e)=>{
     const target = e.target.getAttribute("class");
     if(target === "criptografar" || target === "descriptografar" || target === "result-btn"){
         let palavra = texto.value;
+        palavra = palavra.toLowerCase()
 
         output.setAttribute("class", "hide");
         result.parentElement.classList.remove("hide")
@@ -20,7 +21,7 @@ document.body.addEventListener("click", (e)=>{
             result.textContent = "Por favor, digite alguma palavra!";
             return;
         }
-        if(/[\u0080-\u00FF]/g.test(palavra) || /[^a-z ]/g.test(palavra)){
+        if(/[\u0080-\u00FF]/g.test(palavra) || /[^a-zA-Z ]/g.test(palavra)){
             result.textContent = "Apenas letras minúsculas e sem acento."
             return;
         }
